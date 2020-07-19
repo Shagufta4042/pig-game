@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(141, 39, 39, 0.3);
+}
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    padding: 100px;
+   
+}
+.player-name{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+position: relative;
+}
+.player-score{
+    font-size: 80px;
+    font-weight: 100;
+    color: #2b3da1;
+    text-align: center;
+  margin-bottom: 130px;
+}
+.current-box{
+    background-color: #4e5894;
+    width: 40%;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.current-label{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:rgb(19, 16, 16);
+    font-weight: 140;
+}
+.current-score{
+    font-size: 30px;
+}
+
+button{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%) ;
+    border:none;
+    background: none;
+    width: 200px;
+    cursor: pointer;
+    color: #555;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+.btn-new { top: 45px;}
+.btn-roll { top: 403px;}
+.btn-hold { top: 467px;}
+i{
+    color: #2b3da1;
+    margin-right: 15px;
+    font-size: 32px;
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: -12px;
+}
+button:focus{
+    outline: none;
+}
+button:hover { font-weight: 800; }
+button:hover i { margin-right: 20px;
+font-size:38px ; }
+.active{
+    background-color:#f1e3e3e0;  ;
+}
+.active .player-name { font-weight: 300; }
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    color: #2b3da1;
+   position: absolute;
+   top: -7px;
+   right: 10px;
+}
+.dice{
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 178px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.12);
+}
+.winner { background-color: #14a4e7; }
+.winner .player-name { font-weight: 300; color: #e40f0f; }
